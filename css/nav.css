@@ -1,0 +1,26 @@
+div #btn-nav {
+    position: relative;
+  
+  }
+  button {
+    position: absolute;
+    right: 0;
+      background-color: black;
+  }
+  #navBarMenu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+  }
+  a:link,
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+  }
+  #navbar-icon {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
