@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+import Image from 'next/image';
 
 interface ProjectCardProps {
   id?: string,
@@ -13,82 +13,66 @@ interface ProjectCardProps {
   src?: string,
 }
 
-
-const ProjectCard = ({ id, type, heading = 'HeadingNull', subHeading = 'SubHeadingNull', tags = [], body = 'BodyNull', image = '/placeholder.png', link, src }: ProjectCardProps) => {
-
-
-  if (type === 'link') {
-    return (
-
-      <section id={id} className={styles.classWrapper}>
-        <h1 className={styles.classHeading}>{heading}</h1>
-        <h3 className={styles.classSubHeading}>{subHeading}</h3>
-        <div className={styles.classTagsWrapper}>
-          {tags.map((tag, index) => (
-            <span className={styles.classTag} key={index}>{tag}</span>
-          ))}
-        </div>
-        <p className={styles.classBody}>{body}</p>
-
-        <a href={link}>
-          <Image src={image} alt="" width={430} height={250} />
-        </a>
-
-      </section>
-    )
-  } else if (type === 'video') {
-    return (
-
-      <section id={id} className={styles.classWrapper}>
-        <h1 className={styles.classHeading}>{heading}</h1>
-        <h3 className={styles.classSubHeading}>{subHeading}</h3>
-        <div className={styles.classTagsWrapper}>
-          {tags.map((tag, index) => (
-            <span className={styles.classTag} key={index}>{tag}</span>
-          ))}
-        </div>
-        <p className={styles.classBody}>{body}</p>
-
-        <VideoEmbed src={src} />
-
-      </section>
-    )
-  } else {
-    return (
-      <section id={id} className={styles.classWrapper}>
-        <h1 className={styles.classHeading}>{heading}</h1>
-        <h3 className={styles.classSubHeading}>{subHeading}</h3>
-        <div className={styles.classTagsWrapper}>
-          {tags.map((tag, index) => (
-            <span className={styles.classTag} key={index}>{tag}</span>
-          ))}
-        </div>
-        <p className={styles.classBody}>{body}</p>
-
-      </section>
-    )
-  }
-}
-
-const styles = {
-  classWrapper: 'bg-white p-6 rounded-xl shadow-sm border border-gray-200',
-  classHeading: 'text-xl font-semibold text-gray-800',
-  classSubHeading: 'text-xl  text-gray-800',
-  classBody: 'text-gray-700 leading-relaxed text-sm',
-  classTagsWrapper: 'flex flex-wrap justify-around p-1 gap-8"',
-  classTag: 'bg-[#2a3134] text-xs  p-1.5  text-[#b4d1de] rounded-lg'
-
-}
-
-export default ProjectCard;
-
-
-const VideoEmbed = ({ src }) => {
-
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  id,
+  type,
+  heading,
+  subHeading,
+  tags = [],
+  body,
+  image = '/placeholder.png',
+  link,
+  src
+}) => {
   return (
-    <iframe width="430" height="250" src={src} title="" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+    <section id={id} className="bg-white border border-gray-200 shadow-sm rounded-xl p-6 space-y-4 transition hover:shadow-md">
+      <div>
+        <h2 className="text-xl font-semibold text-gray-800">{heading}</h2>
+        <h3 className="text-md text-gray-500">{subHeading}</h3>
+      </div>
+
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-3">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-1 rounded-full"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <p className="text-gray-700 leading-relaxed text-sm">{body}</p>
+
+      {type === 'link' && link && (
+        <a href={link} target="_blank" rel="noopener noreferrer" className="block w-fit hover:opacity-90 transition">
+          <Image
+            src={image}
+            alt={heading}
+            width={430}
+            height={250}
+            className="rounded-md border border-gray-200"
+          />
+        </a>
+      )}
+
+      {type === 'video' && src && (
+        <div className="">
+          <iframe
+            width="430" height="250"
+            src={src}
+            title={heading}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="  rounded-md"
+          ></iframe>
+        </div>
+      )}
+    </section>
   );
 };
 
-
-
+export default ProjectCard;
