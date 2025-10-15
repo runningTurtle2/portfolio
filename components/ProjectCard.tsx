@@ -13,22 +13,13 @@ interface ProjectCardProps {
   src?: string,
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
-  id,
-  type,
-  heading,
-  subHeading,
-  tags = [],
-  body,
-  image = '/placeholder.png',
-  link,
-  src
-}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ id, type, heading, subHeading, tags = [], body, image = '/placeholder.png', link, src }) => {
+
   return (
-    <section id={id} className="bg-card-bg shadow-sm rounded-xl p-6 space-y-4 transition hover:shadow-md">
+    <section id={id} className="bg-card-bg shadow-sm rounded-xl p-6 mb-10 space-y-3 transition hover:shadow-md">
       <div>
-        <h2 className="text-xl font-semibold text-text">{heading}</h2>
-        <h3 className="text-md text-text-muted">{subHeading}</h3>
+        <h2 className="text-xl font-semibold text-text">{heading} </h2>
+        <h3 className="text-lg text-text-muted">{subHeading}</h3>
       </div>
 
       {tags.length > 0 && (
@@ -36,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-tag-bg text-tag-text text-xs font-medium px-2.5 py-1 rounded-full"
+              className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full"
             >
               {tag}
             </span>
@@ -44,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
       )}
 
-      <p className="text-text leading-relaxed text-sm">{body}</p>
+      <p className="text-text leading-relaxed text-base">{body}</p>
 
       {type === 'link' && link && (
         <a href={link} target="_blank" rel="noopener noreferrer" className="block w-fit hover:opacity-70 transition">
