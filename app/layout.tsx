@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${roboto.variable} font-sans`}>
-      <body className='bg-slate-400 mt-20 flex items-center justify-center'>{children}</body>
+      <body className='bg-bg mt-20 flex items-center justify-center'>{children}</body>
     </html>
   )
 }

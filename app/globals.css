@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-bg: #121b22;           /* Dark slate */
+  --color-card-bg: #20343b;      /* Slate blue */
+  --color-text: #9be3c2;         /* Mint green */
+  --color-text-muted: #6a8a7b;   /* Muted teal */
+  --color-accent: #48c774;       /* Vibrant but soft green */
+  --color-border: #295a43;       /* Dark muted green */
+  --color-tag-bg: #1a3a2c;       /* Dark teal */
+  --color-tag-text: #a3ddb0;     /* Light mint */
+
+  --color-nav-bg: #101b21;       /* Very dark navy */
+  --color-nav-text: #9be3c2;     /* Mint green */
+  --color-nav-hover: #2e8b57;    /* Medium sea green hover */
+}
+
+
