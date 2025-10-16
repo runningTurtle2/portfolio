@@ -1,5 +1,6 @@
 import {Roboto} from 'next/font/google'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/next"
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -13,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${roboto.variable} font-sans`}>
-      <body className='bg-bg p-16 '>{children}</body>
+      <body className='bg-bg p-16 '>{children} <Analytics /></body>
     </html>
   )
 }
