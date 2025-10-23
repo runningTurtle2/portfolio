@@ -13,8 +13,10 @@ export default function Page() {
                 {/**Personal info section */}
                 <div className='bg-bg text-center p-6 rounded-lg shadow-sm '>
                     <h1 className='text-3xl mb-2 font-semibold text-text'>Oscar Moreno</h1>
-                    <h3 className='text-lg mb-2 text-text'>Software Developer</h3>
-                    <p className='text-base text-text-muted'>Building responsible apps with integrity</p>
+                    <h3 className='text-lg mb-2 text-text'>Software Development Engineer</h3>
+                    <p className='text-base text-text-muted'>Full-stack developer with a strong foundation in building 
+                        end-to-end solutions and a proven ability to learn and deliver in any tech environment
+                    </p>
                     
                     {/**Social links */}
                     <div className='flex justify-around gap-8 pt-12 text-text-muted'>
@@ -48,10 +50,13 @@ export default function Page() {
                                 Typescript
                             </span>
                             <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
-                                C#
+                                HTML
                             </span>
                             <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
-                                C++
+                                CSS
+                            </span>
+                            <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
+                                C#
                             </span>
                         </div>
                 </section>
@@ -60,6 +65,9 @@ export default function Page() {
                         <div className="flex flex-wrap gap-3">
                             <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
                                 .NET
+                            </span>
+                            <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
+                                ASP.NET Core
                             </span>
                             <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
                                 Express.js
@@ -80,7 +88,7 @@ export default function Page() {
                                 Azure
                             </span>
                             <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
-                                Google Cloud Platform
+                                Google Cloud
                             </span>
                             <span className="bg-tag-bg text-tag-text text-base font-medium px-2.5 py-1 rounded-full">
                                 Firebase
@@ -122,7 +130,7 @@ export default function Page() {
                             subHeading='Ace Rocket (AI EdTech Startup)'
                             tags={['HTML', 'CSS', 'JavaScript', 'Google Cloud', 'Firebase']}
                             body='Worked on a full-stack web app to help students prep for their SAT, ACT and AP math exams. I built a 
-                            system that tracks user performance and generates question list based on the areas of weakness. 
+                            student performance analytics dashboard and a data-driven daily plan feature that generates a question list based on the areas of weakness. 
                             Developed and improved features in direct response to user feedback, helping shape the product for over 150 users.'
                             image='/acerocketwebsite.png'
                             link='https://acerocket.net/'
@@ -134,10 +142,10 @@ export default function Page() {
                         <h1 className="text-3xl p-6 mt-12 font-semibold text-text">Projects</h1>
                         <ProjectCard 
                             type='video'
-                            heading='Full-Stack Developer / Tech Lead'
-                            subHeading='TiriVelo Pet Services (Student Capstone Project)'
+                            heading='Full-Stack Developer & Tech Lead'
+                            subHeading='TiriVelo Pet Services (Capstone Project)'
                             tags={['TypeScript', 'React Native', 'CSS', 'PostgreSQL', 'SupaBase', ]}
-                            body='Led the development of a commercial cross-platform mobile application prototype for a pet booking service as a capstone project, 
+                            body='Led the development of a commercial cross-platform mobile application prototype for a pet booking service 
                             using React Native, PostgreSQL, and Supabase for backend CRUD operations. Collaborated with a team of four 
                             to design and implement key features including user authentication, booking, scheduling, and profile management.'
                             src='https://www.youtube.com/embed/spfkV2iHaM8'
