@@ -4,14 +4,15 @@
 
 html {
   scroll-behavior: smooth;
+  color: white;
 }
 :root {
-  --color-bg: #121b22;           /* Dark slate */
+  --color-bg: #0d0d0d;           /* Dark slate */
   --color-card-bg: #20343b;      /* Slate blue */
-  --color-text: #9be3c2;         /* Mint green */
-  --color-text-muted: #6a8a7b;   /* Muted teal */
+  --color-text: #f0f0f0;         /* Mint green */
+  --color-text-muted: #00ffc2;   /* Muted teal */
   --color-accent: #48c774;       /* Vibrant but soft green */
-  --color-border: #295a43;       /* Dark muted green */
+  --color-border: #333333;       /* Dark muted */
   --color-tag-bg: #1a3a2c;       /* Dark teal */
   --color-tag-text: #a3ddb0;     /* Light mint */
 
