@@ -8,8 +8,10 @@ html {
 }
 :root {
   --color-bg: #0d0d0d;           /* Dark slate */
+  --color-bg-surface: #161616;           /* Dark slate */
   --color-card-bg: #20343b;      /* Slate blue */
   --color-text: #f0f0f0;         /* Mint green */
+  --color-text-dark: #a0a0a0;         /* gray  */
   --color-text-muted: #00ffc2;   /* Muted teal */
   --color-accent: #48c774;       /* Vibrant but soft green */
   --color-border: #333333;       /* Dark muted */
