@@ -1,3 +1,4 @@
+import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard'
 import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
 
@@ -6,10 +7,11 @@ export default function Page() {
     const skillsFrontend = ['JavaScript', 'C#', 'HTML', 'CSS'];
     const skillsBackend = ['.Net', 'ASP.NET', 'Node.js', 'Express.js', 'SQL Server', 'PostgreSQL', 'MongoDB', 'Azure', 'Google Cloud', 'Firebase', 'SupaBase'];
     return (
-        <div className='flex flex-col md:flex-row max-w-7xl mx-auto gap-48 '>
+        <div className='flex-1 w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-24'>
+            <Hero />
 
             {/** Sticky Left side */}
-            <div className="p-8 self-start md:sticky md:top-6 h-fit w-96">
+            <div className="p-8 self-start md:top-6 h-fit w-96">
 
                 {/**Personal info section */}
                 <div className='bg-bg text-center p-6 rounded-lg shadow-sm '>
