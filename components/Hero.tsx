@@ -11,7 +11,7 @@ function Hero() {
         </div>
         <h1 className='text-4xl md:text-5xl font-bold tracking-tighter leading-none'>Hello world</h1>
         <p className='text-text-muted text-lg max-w-4xl leading-relaxed border-l-2 border-accent pl-4'>
-          Full-stack developer with a strong foundation in building end-to-end solutions and a proven ability 
+          I'm a Software Developer with a strong foundation in building end-to-end solutions and a proven ability 
           to learn and deliver in any tech environment
         </p>
         <div className='flex flex-wrap gap-4 pt-4'>
