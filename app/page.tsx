@@ -1,8 +1,8 @@
 import EducationSection from '../components/EducationSection';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard'
-import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
 import SkillSection from '../components/SkillSection';
+import ContactSection from '../components/ContactSection';
 
 
 export default function Page() {
@@ -84,7 +84,7 @@ export default function Page() {
 
             </div>
 
-            
+            <ContactSection />
         </div>
     )
 }
