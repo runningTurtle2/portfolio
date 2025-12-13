@@ -8,7 +8,7 @@ function SkillSection() {
         <span className="h-px bg-border flex-grow"></span>
       </h2>
 
-      <div className="border border-border bg-[#1a1a1a] relative">
+      <div className="border border-border bg-[#1a1a1a] ">
         <div className="bg-[#161616] border-b border-border px-4 py-2 flex items-center gap-2">
           <div className="flex gap-2">
             <div className="text-xs text-yellow-300">
