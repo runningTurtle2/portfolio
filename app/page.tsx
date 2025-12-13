@@ -14,20 +14,6 @@ export default function Page() {
             <EducationSection />
             <SkillSection />
 
-            {/** Right side (Main content)*/}
-            <section id='about' className='p-6 '>
-                <p className='text-base text-text leading-relaxed'>
-                    Hello! I’m a recent Software Development graduate from Bellevue College,
-                    seeking full-time as a software developer. I’ve built full-stack
-                    applications across web, mobile, and backend platforms through hands-on experience
-                    at Ace Rocket, a capstone-turned-internship with TiriVelo Inc, project-based coursework,
-                    and personal projects.
-                </p>
-                <p className='text-base text-text pt-6 leading-relaxed'>
-                    I'm excited to keep growing as a developer and contribute to meaningful projects.
-                </p>
-            </section>
-
             <div>
                 <section id="experience" className="scroll-mt-24 pt-6 min-h-[60vh]">
                     <h1 className="text-3xl p-6 mt-12 font-semibold text-text ">Experience</h1>

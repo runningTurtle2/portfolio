@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <header className='sticky top-0 border-b border-border w-full bg-bg backdrop-blur-sm'>
+    <header className='sticky top-0 border-b border-border w-full bg-bg backdrop-blur-sm z-50'>
         <div className='flex items-center justify-between max-w-7xl mx-auto px-6 h-16 '>
             <div className='flex items-center gap-3'>
                 <span className='text-accent font-bold text-xl'>~/</span>
