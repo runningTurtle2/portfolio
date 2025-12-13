@@ -2,6 +2,7 @@ import EducationSection from '../components/EducationSection';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard'
 import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
+import SkillSection from '../components/SkillSection';
 
 
 export default function Page() {
@@ -11,6 +12,7 @@ export default function Page() {
         <div className='flex-1 w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-24'>
             <Hero />
             <EducationSection />
+            <SkillSection />
             {/** Sticky Left side */}
             <div className="p-8 self-start md:top-6 h-fit w-96">
 
