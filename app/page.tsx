@@ -15,7 +15,11 @@ export default function Page() {
 
             <div>
                 <section id="experience" className="scroll-mt-24 pt-6 min-h-[60vh]">
-                    <h1 className="text-3xl p-6 mt-12 font-semibold text-text ">Experience</h1>
+                    
+                    <h2 className="text-xl font-bold mb-8 flex items-center gap-4 text-accent">
+                        <span className="text-2xl">{'>'}</span> Experience
+                        <span className="h-px bg-border flex-grow"></span>
+                    </h2>
                     <ProjectCard
                         type='link'
                         heading='Software Engineer'
@@ -30,29 +34,19 @@ export default function Page() {
                 </section>
 
                 <section id="projects" className="scroll-mt-24 pt-6 min-h-[60vh]">
-                    <h1 className="text-3xl p-6 mt-12 font-semibold text-text">Projects</h1>
+                    <h2 className="text-xl font-bold mb-8 flex items-center gap-4 text-accent">
+                        <span className="text-2xl">{'>'}</span> Projects
+                        <span className="h-px bg-border flex-grow"></span>
+                    </h2>
                     <ProjectCard
                         type='video'
-                        heading='Full-Stack Developer & Tech Lead'
-                        subHeading='TiriVelo Pet Services (Capstone Project)'
+                        heading='TiriVelo Pet Services - Full-Stack Mobile Application'
+                        subHeading='Capstone Project'
                         tags={['TypeScript', 'React Native', 'CSS', 'PostgreSQL', 'SupaBase',]}
-                        body='Led the development of a commercial cross-platform mobile application prototype for a pet booking service 
-                            using React Native, PostgreSQL, and Supabase for backend CRUD operations. Collaborated with a team of four 
-                            to design and implement key features including user authentication, booking, scheduling, and profile management.'
+                        body='Collaborated with a team of 4 other developers to design and build a commercial-grade cross-platform mobile application prototype for TiriVelo, a pet service booking platform.'
                         src='https://www.youtube.com/embed/spfkV2iHaM8'
                     />
 
-                    <ProjectCard
-                        type='video'
-                        heading='Hospital Management System'
-                        subHeading='Academic Project'
-                        tags={['C#', '.NET', 'SQL Server', 'MongoDB', 'Windows Forms', 'SignalR']}
-                        body='A collaborative project where I am paired with another student to develop a system that aims to manage 
-                            hospital operations, patient data, medical resources, and communication. Features include authentication, patient record management, 
-                            appointment scheduling, medical inventory, data analytics, and real-time updates.'
-                        src='https://www.youtube.com/embed/emC-xTwNm1o'
-
-                    />
 
                     <ProjectCard
                         type='link'
@@ -64,6 +58,17 @@ export default function Page() {
                             Currently in the early stages of development, with core features still being built.'
                         image='/coffeeList.png'
                         link='https://coffee-list-two.vercel.app/'
+                    />
+                    <ProjectCard
+                        type='video'
+                        heading='Hospital Management System'
+                        subHeading='Academic Project'
+                        tags={['C#', '.NET', 'SQL Server', 'MongoDB', 'Windows Forms', 'SignalR']}
+                        body='A collaborative project where I am paired with another student to develop a system that aims to manage 
+                            hospital operations, patient data, medical resources, and communication. Features include authentication, patient record management, 
+                            appointment scheduling, medical inventory, data analytics, and real-time updates.'
+                        src='https://www.youtube.com/embed/emC-xTwNm1o'
+
                     />
                 </section>
 

@@ -7,11 +7,11 @@ function Hero() {
     <section id='about' className='grid gap-12 items-center pt-8'>
       <div className='space-y-6'>
         <div className='inline-flex items-center gap-2 px-3 py-1 border border-border bg-[#202020] text-sm text-accent mb-2 w-fit'>
-          <span className='w-2 h-2 bg-green-400 rounded-full'></span><p>Actively Seeking</p>
+          <span className='w-2 h-2 bg-green-400 rounded-full animate-pulse'></span><p className='uppercase'>Status Online</p>
         </div>
         <h1 className='text-4xl md:text-5xl font-bold tracking-tighter leading-none'>Hello world</h1>
         <p className='text-text-muted text-lg max-w-4xl leading-relaxed border-l-2 border-accent pl-4'>
-          I'm a Software Developer with a strong foundation in building end-to-end solutions and a proven ability 
+          My name is Oscar Moreno and I'm a Software Developer with a strong foundation in building end-to-end solutions and a proven ability 
           to learn and deliver in any tech environment
         </p>
         <div className='flex flex-wrap gap-4 pt-4'>
