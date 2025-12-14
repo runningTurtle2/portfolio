@@ -5,8 +5,10 @@ function Header() {
     <header className='sticky top-0 border-b border-border w-full bg-bg backdrop-blur-sm z-50'>
         <div className='flex items-center justify-between max-w-7xl mx-auto px-6 h-16 '>
             <div className='flex items-center gap-3'>
+              <a href='/'>
                 <span className='text-accent font-bold text-xl'>~/</span>
                 <span className='font-bold text-lg transition-all uppercase tracking-tight'>Oscar.Moreno</span>
+              </a>
             </div>
             <nav className='hidden md:flex items-center gap-8 text-sm'>
                 <a className='hover:text-accent' href='#about'>/about</a>
