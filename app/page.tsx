@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard'
 import SkillSection from '../components/SkillSection';
 import ContactSection from '../components/ContactSection';
+import ExperienceSection from '../components/ExperienceSection';
 
 
 export default function Page() {
@@ -12,14 +13,11 @@ export default function Page() {
             <Hero />
             <EducationSection />
             <SkillSection />
+            <ExperienceSection />
 
             <div>
                 <section id="experience" className="scroll-mt-24 pt-6 min-h-[60vh]">
                     
-                    <h2 className="text-xl font-bold mb-8 flex items-center gap-4 text-accent">
-                        <span className="text-2xl">{'>'}</span> Experience
-                        <span className="h-px bg-border flex-grow"></span>
-                    </h2>
                     <ProjectCard
                         type='link'
                         heading='Software Engineer'
