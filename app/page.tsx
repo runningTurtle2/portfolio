@@ -4,6 +4,7 @@ import ProjectCard from '../components/ProjectCard'
 import SkillSection from '../components/SkillSection';
 import ContactSection from '../components/ContactSection';
 import ExperienceSection from '../components/ExperienceSection';
+import FeaturedSection from '../components/FeaturedSection';
 
 
 export default function Page() {
@@ -16,7 +17,7 @@ export default function Page() {
             <ExperienceSection />
 
             <div>
-                <section id="experience" className="scroll-mt-24 pt-6 min-h-[60vh]">
+                <section className="scroll-mt-24 pt-6 min-h-[60vh]">
                     
                     <ProjectCard
                         type='link'
@@ -30,12 +31,9 @@ export default function Page() {
                         link='https://acerocket.net/'
                     />
                 </section>
+                <FeaturedSection />
+                <section className="scroll-mt-24 pt-6 min-h-[60vh]">
 
-                <section id="projects" className="scroll-mt-24 pt-6 min-h-[60vh]">
-                    <h2 className="text-xl font-bold mb-8 flex items-center gap-4 text-accent">
-                        <span className="text-2xl">{'>'}</span> Projects
-                        <span className="h-px bg-border flex-grow"></span>
-                    </h2>
                     <ProjectCard
                         type='video'
                         heading='TiriVelo Pet Services - Full-Stack Mobile Application'
