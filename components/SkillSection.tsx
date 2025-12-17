@@ -100,8 +100,13 @@ function SkillSection() {
                 <span className="text-[#CE9178]">"Azure"</span>,{" "}
                 <span className="text-[#CE9178]">"Google Cloud"</span>,{" "}
                 <span className="text-[#CE9178]">"Firebase"</span>,{" "}
-                <span className="text-[#CE9178]">"Supabase"</span>,
+                <span className="text-[#CE9178]">"Supabase"</span>
               </span>
+            </div>
+
+            {/* ] */}
+            <div className="code-line">
+              <span className="ml-4 text-pink-400">]</span>,
             </div>
 
             {/* "tools": [ */}
@@ -125,7 +130,7 @@ function SkillSection() {
               <span className="ml-8">
                 <span className="text-[#CE9178]">"Jira"</span>,{" "}
                 <span className="text-[#CE9178]">"Figma"</span>,{" "}
-                <span className="text-[#CE9178]">"Linux CLI"</span>,{" "}
+                <span className="text-[#CE9178]">"Linux CLI"</span>
               </span>
             </div>
 

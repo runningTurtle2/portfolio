@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectCards from './ProjectCards'
 
 function FeaturedSection() {
   return (
@@ -8,7 +9,7 @@ function FeaturedSection() {
             <span className="h-px bg-border flex-grow"></span>
         </h2>
         <div className='grid gap-8'>
-
+            <ProjectCards />
         </div>
     </section>
   )
