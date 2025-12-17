@@ -40,7 +40,7 @@ function FeaturedSection() {
                mobile application prototype for TiriVelo, a pet service booking platform.'
               year='2025'
               tags={['TypeScript', 'React Native', 'CSS', 'PostgreSQL', 'SupaBase']}
-              demo='https://www.youtube.com/embed/spfkV2iHaM8'
+              demo='https://youtube.com/shorts/spfkV2iHaM8?feature=share'
               />
 
             <ProjectCards
@@ -50,7 +50,7 @@ function FeaturedSection() {
               management, appointment scheduling, medical inventory, data analytics, and real-time updates.'
               year='2024'
               tags={['C#', '.NET', 'SQL Server', 'MongoDB', 'SignalR']}
-              demo='https://acerocket.net/'
+              demo='https://youtu.be/emC-xTwNm1o'
               />
         </div>
     </section>

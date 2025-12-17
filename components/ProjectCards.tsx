@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 interface ProjectCardProps {
-    id?: string,
     img?: string,
     heading: string,
     year: string,
