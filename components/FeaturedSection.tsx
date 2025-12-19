@@ -44,13 +44,28 @@ function FeaturedSection() {
               />
 
             <ProjectCards
-              heading='Hospital Management System - Academic Project'
-              description='A collaborative project where I am paired with another student to develop a system that aims to manage 
+              img='/sportsmanagement.png'
+              heading="Fantasy Sports Team Management System"
+              description="An academic project that is a multi-microservices architecture with each major functionality is implemented as an independent service that 
+                communicates with other services via REST API's. I was the main contributor for the Player Management Service, Database Design and 
+                Integration, Security and Deployment. This was a collaborative team project between me and two other developers 
+                working close and taking ownership if different parts of the project."
+              year='2024'
+              tags={['C#', '.NET', 'SQL Server', 'Azure', 'Entity Framework', 'ASP.NET Core']}
+              demo='https://youtu.be/i0XHtZgtFac'
+              doc='/files/sportsDocument.pdf'
+              />
+
+            <ProjectCards
+            img='/hospitalmanagement.png'
+              heading='Hospital Management System'
+              description='A collaborative academic project where I am paired with another student to develop a system that aims to manage 
               hospital operations, patient data, medical resources, and communication. Features include authentication, patient record 
               management, appointment scheduling, medical inventory, data analytics, and real-time updates.'
               year='2024'
               tags={['C#', '.NET', 'SQL Server', 'MongoDB', 'SignalR']}
               demo='https://youtu.be/emC-xTwNm1o'
+              code='https://github.com/runningTurtle2/hospital-management-system'
               />
         </div>
     </section>
