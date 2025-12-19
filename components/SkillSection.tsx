@@ -76,7 +76,8 @@ function SkillSection() {
             <div className="code-line">
               <span className="ml-8">
                 <span className="text-[#CE9178]">"C#"</span>,{" "}
-                <span className="text-[#CE9178]">"ASP.NET"</span>,{" "}
+                <span className="text-[#CE9178]">"ASP.NET Core"</span>,{" "}
+                <span className="text-[#CE9178]">"Entity Framework"</span>,{" "}
                 <span className="text-[#CE9178]">"SQL Server"</span>,{" "}
                 <span className="text-[#CE9178]">"MongoDB"</span>
               </span>
@@ -128,6 +129,8 @@ function SkillSection() {
 
             <div className="code-line">
               <span className="ml-8">
+                <span className="text-[#CE9178]">"Unit Testing"</span>,{" "}
+                <span className="text-[#CE9178]">"Docker"</span>,{" "}
                 <span className="text-[#CE9178]">"Jira"</span>,{" "}
                 <span className="text-[#CE9178]">"Figma"</span>,{" "}
                 <span className="text-[#CE9178]">"Linux CLI"</span>

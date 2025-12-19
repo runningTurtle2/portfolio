@@ -9,10 +9,11 @@ interface ProjectCardProps {
     tags?: string[],
     code?: string,
     demo?: string,
+    doc?: string,
 }
 
 
-function ProjectCards({img='/placeholder.png', heading, description, year, tags, code, demo }:ProjectCardProps)  {
+function ProjectCards({img='/placeholder.png', heading, description, year, tags, code, demo, doc }:ProjectCardProps)  {
 
     return (
         <article className='bg-[#161616] border border-border p-1 flex flex-col md:flex-row gap-6 transition-all group'>
@@ -39,10 +40,22 @@ function ProjectCards({img='/placeholder.png', heading, description, year, tags,
                 )}
 
 
-                {(code != null && demo != null ) && (
+                {
+                (code != null && demo != null && doc != null) && (
                     <div className='mt-auto flex gap-4 border-t border-border pt-4'>
                         <a className='text-sm font-bold uppercase hover:text-accent' href={code} target='_blank'>{'[ Code ]'}</a>
                         <a className='text-sm font-bold uppercase hover:text-accent' href={demo} target='_blank'>{'[ Demo ]'}</a>
+                        <a className='text-sm font-bold uppercase hover:text-accent' href={doc} target='_blank'>{'[ Doc ]'}</a>
+                    </div>
+                ) || (code != null && demo != null ) && (
+                    <div className='mt-auto flex gap-4 border-t border-border pt-4'>
+                        <a className='text-sm font-bold uppercase hover:text-accent' href={code} target='_blank'>{'[ Code ]'}</a>
+                        <a className='text-sm font-bold uppercase hover:text-accent' href={demo} target='_blank'>{'[ Demo ]'}</a>
+                    </div>
+                ) || (doc != null && demo != null ) && (
+                    <div className='mt-auto flex gap-4 border-t border-border pt-4'>
+                        <a className='text-sm font-bold uppercase hover:text-accent' href={demo} target='_blank'>{'[ Demo ]'}</a>
+                        <a className='text-sm font-bold uppercase hover:text-accent' href={doc} target='_blank'>{'[ Doc ]'}</a>
                     </div>
                 ) || (code != null) && (
                     <div className='mt-auto flex gap-4 border-t border-border pt-4'>
@@ -51,6 +64,10 @@ function ProjectCards({img='/placeholder.png', heading, description, year, tags,
                 ) || (demo != null) && (
                     <div className='mt-auto flex gap-4 border-t border-border pt-4'>
                     <a className='text-sm font-bold uppercase hover:text-accent' href={demo} target='_blank'>{'[ Demo ]'}</a>
+                    </div>
+                ) || (doc != null) && (
+                    <div className='mt-auto flex gap-4 border-t border-border pt-4'>
+                    <a className='text-sm font-bold uppercase hover:text-accent' href={doc} target='_blank'>{'[ Doc ]'}</a>
                     </div>
                 )
                 }
