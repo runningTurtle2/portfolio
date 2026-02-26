@@ -35,10 +35,10 @@ function SkillSection() {
 
             <div className="code-line">
               <span className="ml-8">
-                <span className="text-[#CE9178]">"React.js"</span>,{" "}
-                <span className="text-[#CE9178]">"TypeScript"</span>,{" "}
-                <span className="text-[#CE9178]">"Next.js"</span>,{" "}
                 <span className="text-[#CE9178]">"JavaScript"</span>,{" "}
+                <span className="text-[#CE9178]">"TypeScript"</span>,{" "}
+                <span className="text-[#CE9178]">"React.js"</span>,{" "}
+                <span className="text-[#CE9178]">"Next.js"</span>,{" "}
               </span>
             </div>
 
@@ -98,10 +98,10 @@ function SkillSection() {
 
             <div className="code-line">
               <span className="ml-8">
-                <span className="text-[#CE9178]">"Azure"</span>,{" "}
-                <span className="text-[#CE9178]">"Google Cloud"</span>,{" "}
+                <span className="text-[#CE9178]">"Google Cloud Platform"</span>,{" "}
                 <span className="text-[#CE9178]">"Firebase"</span>,{" "}
-                <span className="text-[#CE9178]">"Supabase"</span>
+                <span className="text-[#CE9178]">"Supabase"</span>,{" "}
+                <span className="text-[#CE9178]">"Azure"</span>
               </span>
             </div>
 
@@ -130,7 +130,6 @@ function SkillSection() {
             <div className="code-line">
               <span className="ml-8">
                 <span className="text-[#CE9178]">"Unit Testing"</span>,{" "}
-                <span className="text-[#CE9178]">"Docker"</span>,{" "}
                 <span className="text-[#CE9178]">"Jira"</span>,{" "}
                 <span className="text-[#CE9178]">"Figma"</span>,{" "}
                 <span className="text-[#CE9178]">"Linux CLI"</span>
